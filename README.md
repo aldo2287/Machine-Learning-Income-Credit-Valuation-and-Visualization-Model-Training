@@ -4,17 +4,6 @@ This project aims to build a predictive model to estimate a person's annual inco
 
 The dataset, Credit_card.csv, contains various attributes related to individuals' financial and demographic information, which is used to build the predictive model.
 
-Table of Contents:
-
-Technologies
-Installation
-Dataset Description
-Steps to Run the Code
-Data Preprocessing and Feature Engineering
-Model Building and Evaluation
-Results
-Licenses and Credits
-
 Technologies:
 
 Python: Programming language used to write the code.
