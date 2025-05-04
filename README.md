@@ -1,46 +1,34 @@
 Credit Score Prediction Model
-Overview
+
 This project aims to build a predictive model to estimate a person's annual income based on various features such as employment details, education, family structure, and more. Using PySpark for data preprocessing, feature engineering, and model building, the project explores both Linear Regression and Random Forest Regressor for predicting the Annual_income.
 
 The dataset, Credit_card.csv, contains various attributes related to individuals' financial and demographic information, which is used to build the predictive model.
 
-Table of Contents
+Table of Contents:
+
 Technologies
-
 Installation
-
 Dataset Description
-
 Steps to Run the Code
-
 Data Preprocessing and Feature Engineering
-
 Model Building and Evaluation
-
 Results
-
 Licenses and Credits
 
-Technologies
+Technologies:
+
 Python: Programming language used to write the code.
-
 PySpark: Framework for big data processing.
-
 JDK 8: Java Development Kit required for PySpark.
-
 Matplotlib: Library for plotting results.
-
 Pandas: For working with data in DataFrame format.
 
-Installation
+Installation:
+
 Follow these steps to get the environment up and running:
-
 Install Java 8: Required for Spark.
-
 Install JDK 8
-
 Install Spark:
-
 Download and install Spark by following these instructions.
 
 Install Python dependencies:
@@ -49,11 +37,12 @@ bash
 Copy
 Edit
 pip install pyspark matplotlib pandas
+
 Download the dataset:
 
 Ensure you have the Credit_card.csv dataset in the same directory as the script or update the file path in the code accordingly.
-
 Dataset Description
+
 The dataset Credit_card.csv contains various attributes related to individuals, including:
 
 Type_Occupation: Occupation type (e.g., business, student, retired).
@@ -76,7 +65,8 @@ Education: Education level (e.g., higher education, academic degree).
 
 Marital_status: Marital status (e.g., married, single).
 
-Steps to Run the Code
+Steps to Run the Code:
+
 Setup Environment: Make sure you've installed Java 8, Spark, and Python libraries as described above.
 
 Run the Script:
@@ -92,6 +82,7 @@ Copy
 Edit
 python credit_score_prediction.py
 Data Preprocessing and Feature Engineering
+
 The data preprocessing steps include:
 
 Handling Missing Data: Missing values in Type_Occupation are filled with 'NA', and other rows are dropped if any nulls are present in critical columns.
@@ -111,6 +102,7 @@ Categorical columns like GENDER, Car_Owner, Propert_Owner, and others are encode
 Feature Selection: The final model includes features like Income_per_Family_Member, Age, FR_score, and others.
 
 Model Building and Evaluation
+
 Two machine learning models are implemented and evaluated:
 
 Simple Linear Regression (SLR):
@@ -128,6 +120,7 @@ Evaluation metric: RMSE.
 Both models are evaluated on the test set, and the predicted annual income is compared with the actual values.
 
 Results
+
 After training both models, the following results were obtained:
 
 Linear Regression RMSE:
@@ -141,6 +134,7 @@ The evaluation results of the Random Forest model were visually plotted, showing
 
 
 Licenses and Credits
+
 PySpark: The project uses the PySpark framework for data processing and machine learning.
 
 Matplotlib: Used for plotting the predictions vs actual values.
